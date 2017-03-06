@@ -16,7 +16,7 @@
 
 .jumbotron{
 	background: url('intro2.jpg');
-	background-size: cover;
+	background-size: 100% ;
 	background-attachment: fixed;
 	  padding-top: 15%;
       padding-bottom: 20%;
