@@ -16,10 +16,11 @@
 
 .jumbotron{
 	background: url('intro.jpg');
-	background-size: cover;
+	background-size: 100%;
 	background-attachment: fixed;
 	  padding-top: 15%;
       padding-bottom: 20%;
+      
 
 
 
@@ -36,6 +37,7 @@
         border: none;
         border-radius: 0;
         background-color: rgba(0,0,0,0);
+
 }
 
 
