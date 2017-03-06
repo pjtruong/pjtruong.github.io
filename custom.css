@@ -6,10 +6,22 @@
 
 }
 
+.navbar{
+	 -webkit-transition: 1.6s; /* Safari */
+    transition:  1.6s;
+
+}
+
+
+
 .jumbotron{
-	background: url('worshipBg.jpg');
+	background: url('intro.jpg');
 	background-size: cover;
 	background-attachment: fixed;
+	  padding-top: 15%;
+      padding-bottom: 20%;
+
+
 
 }
 
@@ -18,5 +30,31 @@
 
 	transition: .4s;
 
-
 }
+
+.navbar{
+        border: none;
+        border-radius: 0;
+        background-color: rgba(0,0,0,0);
+}
+
+
+.btn-outline-secondary{
+	color: #d6d6d6;
+	background-color: rgba(0,0,0,0.2);
+}    
+
+
+.lead {
+	font-family: monospace;
+	font-size: 1.5em;
+}
+
+.smoothScroll {
+  text-decoration: none;
+    font-family: Segoe UI;
+  margin: 24px;
+}
+
+
+

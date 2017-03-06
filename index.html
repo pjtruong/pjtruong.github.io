@@ -4,17 +4,19 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Worship Conf</title>
+    <title>Peter's Portfolio</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="custom.css">
   </head>
 
+
+
   <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100"> 
 
 
   <!-- nav bar -->
-    <nav class="navbar navbar-toggleable-sm navbar-inverse bg-primary fixed-top">
+    <nav id="nav" class="navbar navbar-toggleable-sm navbar-inverse bg-faded fixed-top">
       <div class="container">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -23,19 +25,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#home">HOME <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#about">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#speakers">Speakers</a>
+              <a class="nav-link" href="#speakers">PROJECTS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#schedule">Schedule</a>
+              <a class="nav-link" href="#schedule">CONTACT</a>
               </li>
             </ul>
-              <a class="navbar-brand mr-0 hidden-xs-down" href="https://worshipmusiciansassociation.com/">Presented by WMA</a>
+              <a class="navbar-brand mr-0 hidden-xs-down" href="mailto:hp5340@gmail.com">@pjtruong</a>
           </div>
     </div>
   </nav>
@@ -44,23 +46,24 @@
 
 
 <!-- jumbotron -->
-  <div class="jumbotron jumbotron-fluid bg-info text-white">
+  <div class="jumbotron jumbotron-fluid  text-white mb-0">
     <div class="container text-center">
-     <h1 class="display-2 pt-5">Worship Conf</h1>
-      <p class="lead pb-3">A One-day Conference About All Things Worship!</p>
-        <div class="btn-group mt-2" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register">Register Now</button>
-          <a class="btn btn-secondary btn-lg" href="#speakers">See Speakers</a>
-        </div>
+     <h1 class="display-1">PETER J. TRUONG</h1>
+      <p class="lead py-2">a web developer, guitar player, amateur video maker, lifelong gamer, and many more...</p>
+        
+        
+          <a class="btn btn-outline-secondary btn-lg mt-5" href="#speakers">LEARN ABOUT ME</a>
+        
     </div>
   </div>
 
 <!-- /jumbotron -->
 
 
-  <div class="container pt-2" id="about">
+  <div class="container-fluid bg-inverse mt-0 pt-0"  id="about">
     <!-- about -->
-  <div class="row">
+        <h1 class="display-4 text-center mb-5 text-muted">About</h1>
+  <div class="row text-white bg-inverse">
     <div class="col-md-4 push-xl-4">
       <h3 class="mb-3">About Worship Conf</h3>
         <img class="mb-2 img-fluid rounded hidden-xs-down" src="irvine.jpg" alt="Irvine">
@@ -393,7 +396,26 @@
 
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+      <script>
+      $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 600);
+              return false;
+            }
+          }
+        });
+      });
+      </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
