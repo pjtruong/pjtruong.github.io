@@ -1,3 +1,5 @@
+
+
 .navbar .navbar-brand{
 	
 	color: rgba(255, 255, 255, .85);
@@ -20,10 +22,18 @@
 	background-attachment: fixed;
 	  padding-top: 15%;
       padding-bottom: 20%;
-      
+   
 
+}
 
+.container-fluid{
 
+	background: url('starBG.jpg');
+	background-size: 100% ;
+	background-attachment: fixed;
+	  padding-top: 5%;
+	  
+    
 }
 
 .btn,
@@ -59,4 +69,7 @@
 }
 
 
-
+p {
+	font-family: monospace;
+	font-size:1.1em;
+}
