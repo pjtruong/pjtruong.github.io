@@ -15,7 +15,13 @@
 }
 
 
-
+@media (max-width: 400px) {
+  .jumbotron {
+    
+    background: url('intro2.jpg');
+	background-size: cover ;
+  }
+}
 
 
 .jumbotron{
