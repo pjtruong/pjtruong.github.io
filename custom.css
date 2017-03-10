@@ -15,13 +15,7 @@
 }
 
 
-@media (max-width: 400px) {
-  .jumbotron {
-    
-    background: url('intro2.jpg');
-	background-size: cover ;
-  }
-}
+
 
 
 .jumbotron{
@@ -47,7 +41,7 @@
 .btn,
 .active{
 
-	transition: .4s;
+	transition: .3s;
 
 }
 
@@ -80,4 +74,11 @@
 p {
 	font-family: monospace;
 	font-size:1.1em;
+}
+
+
+#typedtext {
+
+	font-family: monospace;
+	font-size:1.5em;
 }
